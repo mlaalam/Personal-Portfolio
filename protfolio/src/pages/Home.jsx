@@ -4,7 +4,17 @@ import { HiDownload } from "react-icons/hi";
 import { FaGithub } from "react-icons/fa";
 import { FaLinkedin } from "react-icons/fa";
 import { IoLogoWhatsapp } from "react-icons/io";
+import { FaCopy ,FaCheck } from "react-icons/fa";
+import { useState } from "react";
 function Home() {
+  const [copied, setCopied] = useState(false);
+  const email = "mouad.laalam.dev@gmail.com";
+
+  const handleCopy = () => {
+    navigator.clipboard.writeText(email);
+    setCopied(true);
+    setTimeout(() => setCopied(false), 2000);
+  };
   return (
     <>
       <section className="w-[90%] lg:w-[70%] flex flex-col-reverse lg:flex-row items-center justify-between mx-auto mt-10 lg:mt-20 gap-10 lg:gap-0">
@@ -25,6 +35,16 @@ function Home() {
         <div>
           <button className="flex justify-center items-center gap-2 p-2 cursor-pointer  rounded-full text-[#00ff99] font-['JetBrains_Mono']  border-2 border-[#00ff99] hover:bg-[#00ff99] hover:text-white hover:rounded-full"><a href={cv} download="MouadLaalam.pdf">Download cv </a><HiDownload /></button>
         </div>
+        <p className="border-2 p-2 border-[#00ff99] font-['JetBrains_Mono'] text-[#00ff99] rounded-full flex justify-center items-center gap-2 px-6">
+            {email}
+            <span onClick={handleCopy} className="cursor-pointer flex items-center">
+              {copied ? (
+                <FaCheck className="text-white animate-pulse" title="Copied!" />
+              ) : (
+                <FaCopy className="text-[#00ff99] hover:text-white transition-colors" />
+              )}
+            </span>
+          </p>
         <ul className="flex gap-4 list-none">
           <li className="p-2 border-2 border-[#00ff99] rounded-full "><a href="https://github.com/mlaalam"><FaGithub className="text-[#00ff99]"/></a> </li>
           <li className="p-2 border-2 border-[#00ff99] rounded-full "><a href="https://www.linkedin.com/in/mouadlaalam"><FaLinkedin  className="text-[#00ff99]"/></a> </li>
