@@ -1,0 +1,40 @@
+{
+  "experience": [
+    {
+      "title": "Full Stack PHP Developer",
+      "company": "I-Gouvernancia",
+      "location": "Casablanca",
+      "duration": "September 2023 - March 2025",
+      "description": "Led the installation and configuration of EJBCA with MariaDB, MySQL, and PostgreSQL for secure PKI infrastructure. Developed fiscal management applications for VAT, IR, CNSS, and CIMR within Dolibarr, including automated XML/TXT file generation. Managed web deployment and process automation via SSH.",
+      "technologies": ["PHP", "MySQL", "PostgreSQL", "MariaDB", "SSH", "Dolibarr", "EJBCA"]
+    },
+    {
+      "title": "Full Stack Developer (Intern)",
+      "company": "CASA Information Systems Consulting",
+      "location": "Casablanca",
+      "duration": "January 2023 - February 2023",
+      "description": "Developed an innovative car rental platform designed to streamline communication between clients and agency owners. Managed the full lifecycle from UML modeling to database management and frontend styling.",
+      "technologies": ["PHP", "Laravel", "MySQL", "JavaScript", "HTML5", "CSS3", "Bootstrap", "GitHub", "StarUML"]
+    }
+  ],
+  "educations": [
+    {
+      "degree": "Full Stack Developer (Laravel - React Js)",
+      "institution": "Simplon Maghreb",
+      "duration": "August 2025 – Present",
+      "description": "Intensive specialized training focused on modern web ecosystems, focusing on high-performance applications using Laravel and React."
+    },
+    {
+      "degree": "Professional License in Software Engineering & Information Systems (ILSI)",
+      "institution": "ENSA Kenitra",
+      "duration": "2024 – 2025",
+      "description": "Specialized university degree covering advanced software architecture, system analysis, and information system management."
+    },
+    {
+      "degree": "Specialized Technician Diploma in Digital Development (Full Stack)",
+      "institution": "ISTA (OFPPT)",
+      "duration": "2021 – 2023",
+      "description": "Foundational training in software development, database management, and full-stack web technologies."
+    }
+  ]
+}

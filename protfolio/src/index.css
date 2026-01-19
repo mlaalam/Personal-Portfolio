@@ -3,3 +3,21 @@
 body{
 background-color: #0F172A;
 }
+.custom-scrollbar::-webkit-scrollbar {
+  width: 6px; 
+}
+
+.custom-scrollbar::-webkit-scrollbar-track {
+  background: #232329; 
+  border-radius: 10px;
+}
+
+.custom-scrollbar::-webkit-scrollbar-thumb {
+  background: #00ff99; 
+  border-radius: 10px;
+  border: 1px solid #00ff99; 
+}
+
+.custom-scrollbar::-webkit-scrollbar-thumb:hover {
+  background: #00e68a;
+}

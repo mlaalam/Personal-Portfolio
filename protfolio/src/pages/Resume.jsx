@@ -1,6 +1,6 @@
 import { useState } from 'react';
 import Experience from '../components/Experience';
-import Edication from '../components/Edication';
+import Education from '../components/Education';
 import Skills from '../components/Skills';
 import About from '../components/About';
 
@@ -9,7 +9,7 @@ const Resume = () => {
 
   const content = {
     experience: <Experience />,
-    education: <Edication />,   
+    education: <Education />,   
     skills: <Skills />,         
     about: <About />,         
   };
