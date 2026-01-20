@@ -9,12 +9,12 @@ const Resume = () => {
 
   const content = {
     experience: <Experience />,
-    education: <Education />,   
-    skills: <Skills />,         
+    education: <Education />,            
     about: <About />,         
   };
 
   return (
+    <>
       <div className="w-[90%] lg:w-[80%] flex flex-col lg:flex-row mx-auto mt-10 gap-10">
         <div className="flex flex-col gap-4 w-full lg:max-w-[380px] text-center lg:text-left">
         <h2 className="text-4xl font-bold text-white mb-2">Why hire me?</h2>
@@ -37,13 +37,6 @@ const Resume = () => {
           </button>
           
           <button 
-            onClick={() => setActiveTab('skills')}
-            className={`p-4 rounded-xl font-['JetBrains_Mono'] transition-all duration-300 ${activeTab === 'skills' ? 'bg-[#00ff99] text-[#1c1c22] shadow-[0_0_20px_rgba(0,255,153,0.3)]' : 'bg-[#232329] text-white hover:bg-[#00ff99]/20'}`}
-          >
-            Skills
-          </button>
-          
-          <button 
             onClick={() => setActiveTab('about')}
             className={`p-4 rounded-xl font-['JetBrains_Mono'] transition-all duration-300 ${activeTab === 'about' ? 'bg-[#00ff99] text-[#1c1c22] shadow-[0_0_20px_rgba(0,255,153,0.3)]' : 'bg-[#232329] text-white hover:bg-[#00ff99]/20'}`}
           >
@@ -54,8 +47,12 @@ const Resume = () => {
       <div className="flex-1 w-full min-h-[400px]">
         {content[activeTab]}
       </div>
-      
     </div>
+    <div className="w-[90%] lg:w-[80%] mx-auto mt-10 gap-10">
+      <h2 className="text-4xl font-bold text-white">My Skills</h2>
+      <Skills />
+    </div>
+  </>
   );
 };
 

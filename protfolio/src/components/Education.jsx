@@ -16,7 +16,7 @@ function Education() {
           Specialized Full Stack Developer crafting high-performance web
           applications using Laravel's robust backend and React's dynamic frontend
         </p>
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-2 pt-8 gap-6 w-full lg:w-[90%] max-h-[450px] overflow-y-auto overflow-x-hidden custom-scrollbar pr-4">
+        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-2 pt-8 gap-6 w-full lg:w-[90%] max-h-[350px] overflow-y-auto overflow-x-hidden custom-scrollbar pr-4">
           {edica.map((item, index) => (
             <div
               key={index}
