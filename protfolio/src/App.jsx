@@ -18,9 +18,9 @@ function App() {
       <section id="resume" className="min-h-screen">
         <Resume />
       </section>
-      <section id="services" className="min-h-screen">
+      {/* <section id="services" className="min-h-screen">
         <Services />
-      </section>
+      </section> */}
       <section id="projects" className="min-h-screen">
         <Projects />
       </section>

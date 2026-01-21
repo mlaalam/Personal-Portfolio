@@ -1,8 +1,11 @@
 import React from 'react'
+import Card from '../components/Card'
 
 function Services() {
   return (
-    <div>Services</div>
+    <div className=''>
+      <Card />
+    </div>
   )
 }
 

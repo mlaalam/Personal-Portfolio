@@ -5,6 +5,7 @@ import { FaGithub } from "react-icons/fa";
 import { FaLinkedin } from "react-icons/fa";
 import { IoLogoWhatsapp } from "react-icons/io";
 import { FaCopy, FaCheck } from "react-icons/fa";
+import Skills from '../components/Skills';
 import { useState } from "react";
 function Home() {
   const [copied, setCopied] = useState(false);
@@ -106,35 +107,10 @@ function Home() {
           </div>
         </div>
       </section>
-      <section className="w-[90%] lg:w-[70%] flex flex-col-reverse lg:flex-row items-center justify-center mx-auto  lg:mt-20 gap-10 lg:gap-0">
-        <div className="flex flex-wrap items-center justify-center gap-20 mt-5">
-          <div className="flex items-center gap-3">
-            <span className="text-6xl font-bold text-white font-['JetBrains_Mono']">
-              2
-            </span>
-            <p className="text-white/60 font-['JetBrains_Mono'] text-sm leading-tight max-w-[100px]">
-              Years of <br /> experience
-            </p>
-          </div>
-          <div className="flex items-center gap-3">
-            <span className="text-6xl font-bold text-white font-['JetBrains_Mono']">
-              12
-            </span>
-            <p className="text-white/60 text-sm font-['JetBrains_Mono'] leading-tight max-w-[100px]">
-              Projects <br /> completed
-            </p>
-          </div>
-          <div className="flex items-center gap-3">
-            <span className="text-6xl font-bold text-white font-['JetBrains_Mono']">
-              5
-            </span>
-            <p className="text-white/60 text-sm font-['JetBrains_Mono'] leading-tight max-w-[100px]">
-              Technologies <br />
-              Mastered
-            </p>
-          </div>
-        </div>
-      </section>
+      <div className="w-[90%] lg:w-[70%] mx-auto mt-15 pb-10">
+        <h2 className="text-4xl font-bold text-white">Skills</h2>
+        <Skills />
+      </div>
     </>
   );
 }
