@@ -5,7 +5,7 @@ import { MdAlternateEmail } from "react-icons/md";
 function About() {
   return (
     <div>
-        <h2 className="text-4xl font-bold text-white mb-2">About me</h2>
+        <h2 className="text-white/80 font-['JetBrains_Mono'] text-sm lg:text-xl">About me</h2>
         <p className="text-white/60 max-w-[90%] mx-auto lg:mx-0">
           Hello! I'm Mouad Laalam, a Full Stack Developer specializing in Laravel and React.js. I am deeply passionate about web development and the art of continuous learning. I focus on creating modern, high-performance interfaces that solve real-world problems. With a strong foundation in both frontend and backend technologies, I am constantly evolving to master the latest industry standards and deliver high-quality digital experiences.
         </p>

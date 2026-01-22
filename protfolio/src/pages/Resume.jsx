@@ -25,21 +25,19 @@ const Resume = () => {
 
   return (
     <>
-      <div className="w-[90%] lg:w-[80%] flex flex-col lg:flex-row mx-auto mt-10 gap-10">
-        
-        {/* Sidebar Container */}
+      <div className="w-[90%] lg:w-[70%] flex flex-col lg:flex-row mx-auto mt-10 gap-10">
         <div className="flex flex-col gap-4 w-full lg:max-w-[380px] text-center lg:text-left">
-          <h2 className="text-4xl font-bold text-white mb-2">Why hire me?</h2>
+          <h2 className="text-white/80 font-['JetBrains_Mono'] text-sm lg:text-xl">Why hire me?</h2>
           <p className="text-white/60 mb-6 max-w-[400px] mx-auto lg:mx-0">
             I am a dedicated developer with a strong focus on building scalable and user-friendly applications.
           </p>
           <div className="sticky top-0 z-40 py-4 lg:bg-transparent lg:relative lg:py-0">
-            <div className="flex flex-row justify-center gap-2 lg:grid lg:grid-cols-1 lg:gap-4 overflow-x-auto no-scrollbar">
+            <div className="flex flex-row justify-center gap-4 lg:grid lg:grid-cols-1 lg:gap-4 overflow-x-auto no-scrollbar">
               {tabs.map((tab) => (
                 <button
                   key={tab.id}
                   onClick={() => setActiveTab(tab.id)}
-                  className={`flex items-center justify-center gap-3 p-3 lg:p-4 rounded-xl font-['JetBrains_Mono'] transition-all duration-300 flex-shrink-0
+                  className={`flex items-center justify-center  gap-3 p-3 lg:p-4 rounded-xl font-['JetBrains_Mono'] transition-all duration-300 flex-shrink-0
                     ${activeTab === tab.id 
                       ? 'bg-[#00ff99] text-[#1c1c22] shadow-[0_0_20px_rgba(0,255,153,0.3)]' 
                       : 'bg-[#232329] text-white hover:bg-[#00ff99]/20 border border-white/5'

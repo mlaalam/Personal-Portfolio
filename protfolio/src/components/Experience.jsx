@@ -10,7 +10,7 @@ function Experience() {
   }, []);
   return (
     <div>
-      <h2 className="text-4xl font-bold text-white mb-2">My Experience</h2>
+      <h2 className="text-white/80 font-['JetBrains_Mono'] text-sm lg:text-xl">My Experience</h2>
       <p className="text-white/60 mb-6 max-w-[600px] mx-auto lg:mx-0">
         Specialized Full Stack Developer crafting high-performance web
         applications using Laravel's robust backend and React's dynamic frontend

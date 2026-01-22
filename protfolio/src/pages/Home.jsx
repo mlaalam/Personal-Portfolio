@@ -108,7 +108,7 @@ function Home() {
         </div>
       </section>
       <div className="w-[90%] lg:w-[70%] mx-auto mt-15 pb-10">
-        <h2 className="text-4xl font-bold text-white">Skills</h2>
+        <h2 className="text-4xl text-white/80 font-['JetBrains_Mono']">Skills</h2>
         <Skills />
       </div>
     </>

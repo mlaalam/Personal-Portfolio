@@ -26,7 +26,7 @@ function Navbar() {
           M<span className="text-[#00ff99] font-['JetBrains_Mono'] italic">.LAALAM</span>
         </div>
         <ul className="hidden md:flex justify-center gap-10 text-white font-['JetBrains_Mono']">
-          {['home', 'resume', 'services', 'projects', 'contact'].map((item) => (
+          {['home', 'resume', 'projects', 'contact'].map((item) => (
             <li key={item}>
               <Link
                 to={item}
