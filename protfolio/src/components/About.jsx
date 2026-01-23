@@ -9,7 +9,7 @@ function About() {
         <p className="text-white/60 max-w-[90%] mx-auto lg:mx-0">
           Hello! I'm Mouad Laalam, a Full Stack Developer specializing in Laravel and React.js. I am deeply passionate about web development and the art of continuous learning. I focus on creating modern, high-performance interfaces that solve real-world problems. With a strong foundation in both frontend and backend technologies, I am constantly evolving to master the latest industry standards and deliver high-quality digital experiences.
         </p>
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-2 pt-8 gap-6 w-full lg:w-[90%] max-h-[350px] overflow-y-auto overflow-x-hidden custom-scrollbar pr-4">
+        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-2 pt-8 gap-6 w-full lg:w-full max-h-[350px] overflow-y-auto overflow-x-hidden custom-scrollbar pr-4">
             <div
               className="p-6 rounded-xl border border-white/5 flex flex-col gap-2"
             >

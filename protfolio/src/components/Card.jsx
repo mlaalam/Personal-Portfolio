@@ -25,7 +25,7 @@ const Card = () => {
         applications using Laravel's robust backend and React's dynamic frontend.
       </p>
 
-      <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-2 pt-8 gap-6 w-full lg:w-[90%] max-h-[450px] overflow-y-auto overflow-x-hidden custom-scrollbar pr-4">
+      <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-2 pt-8 gap-6 w-full lg:w-full max-h-[350px] overflow-y-auto overflow-x-hidden custom-scrollbar pr-4">
         {services.map((service, index) => (
           <div 
             key={index}
