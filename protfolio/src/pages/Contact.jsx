@@ -1,8 +1,21 @@
 import React from 'react'
+import Form from '../components/Form'
 
 function Contact() {
   return (
-    <div>Contact</div>
+    <div>
+      <section className="w-[90%] lg:w-[70%] flex flex-col lg:flex-row items-center justify-between mx-auto mt-10 lg:mt-10 gap-10 lg:gap-0">
+        <div className="flex flex-col gap-5 flex-1 text-center lg:text-left">
+          <h5 className="text-4xl text-white/80 font-['JetBrains_Mono']">
+            Contact me
+          </h5>
+          <div>
+              <Form />
+          </div>
+        </div>
+        
+      </section>
+    </div>
   )
 }
 

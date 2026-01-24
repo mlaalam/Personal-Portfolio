@@ -58,7 +58,7 @@ const Resume = () => {
         </div>
       </div>
 
-        <section className="w-[90%] lg:w-[70%] flex flex-col-reverse lg:flex-row items-center justify-center mx-auto  lg:mt-20 gap-10 lg:gap-0">
+        <section className="w-[90%] lg:w-[70%] flex flex-col-reverse lg:flex-row items-center justify-center mx-auto  lg:mt-30 gap-10 lg:gap-0">
         <div className="flex flex-wrap items-center justify-center gap-20 mt-5">
             <div className="flex items-center gap-3">
             <span className="text-6xl font-bold text-white font-['JetBrains_Mono']">

@@ -5,6 +5,7 @@ import Projects from "./pages/Projects"
 import Services from "./pages/Services";
 import Resume from "./pages/Resume";
 import Contact from "./pages/Contact";
+import Footer from "./layouts/Footer";
 
 function App() {
 
@@ -28,6 +29,7 @@ function App() {
         <Contact />
       </section>
      </main>
+     {/* <Footer /> */}
     </div>
     
   )
