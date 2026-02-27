@@ -140,10 +140,10 @@ const CardProject = () => {
                 </div>
 
                 <div className="flex flex-col sm:flex-row gap-3">
-                  <a href={selectedProject.link} target="_blank" className="flex-1 flex items-center justify-center gap-2 py-3 bg-[#00ff99] text-[#1c1c22] rounded-xl font-bold hover:bg-[#00e68a] transition-all text-sm">
+                  {/* <a href="#" target="_blank" className="flex-1 flex items-center justify-center gap-2 py-3 bg-[#00ff99] text-[#1c1c22] rounded-xl font-bold hover:bg-[#00e68a] transition-all text-sm">
                     View Live <ExternalLink size={16} />
-                  </a>
-                  <a href={selectedProject.github || "#"} target="_blank" className="p-3 bg-white/5 border border-white/10 rounded-xl hover:bg-white/10 transition-all text-white flex justify-center">
+                  </a> */}
+                  <a href={selectedProject.link} target="_blank" className="p-3 bg-black/50 hover:bg-[#00ff99] hover:text-black rounded-xl transition-all text-white flex justify-center">
                     <Github size={20} />
                   </a>
                 </div>

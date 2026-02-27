@@ -1,4 +1,4 @@
-import hero from "../assets/images/hero.jpeg";
+import hero from "../assets/images/imag.jpg";
 import cv from "../assets/cv/MouadLaalam.pdf";
 import { HiDownload } from "react-icons/hi";
 import { FaGithub } from "react-icons/fa";

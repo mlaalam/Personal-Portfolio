@@ -62,7 +62,7 @@ const Resume = () => {
         <div className="flex flex-wrap items-center justify-center gap-20 mt-5">
             <div className="flex items-center gap-3">
             <span className="text-6xl font-bold text-white font-['JetBrains_Mono']">
-              2
+              1
             </span>
             <p className="text-white/60 font-['JetBrains_Mono'] text-sm leading-tight max-w-[100px]">
               Years of <br /> experience
@@ -70,7 +70,7 @@ const Resume = () => {
           </div>
           <div className="flex items-center gap-3">
             <span className="text-6xl font-bold text-white font-['JetBrains_Mono']">
-              12
+              15
             </span>
             <p className="text-white/60 text-sm font-['JetBrains_Mono'] leading-tight max-w-[100px]">
               Projects <br /> completed
