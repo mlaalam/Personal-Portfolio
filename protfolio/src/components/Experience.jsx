@@ -1,13 +1,31 @@
 import { useEffect, useState } from "react";
 import axios from "axios";
+const experience =  [
+    {
+      "title": "Full Stack PHP Developer",
+      "company": "I-Gouvernancia",
+      "location": "Casablanca",
+      "duration": "September 2023 - March 2025",
+      "description": "Led the installation and configuration of EJBCA with MariaDB, MySQL, and PostgreSQL for secure PKI infrastructure. Developed fiscal management applications for VAT, IR, CNSS, and CIMR within Dolibarr, including automated XML/TXT file generation. Managed web deployment and process automation via SSH.",
+      "technologies": ["PHP", "MySQL", "PostgreSQL", "MariaDB", "SSH", "Dolibarr", "EJBCA"]
+    },
+    {
+      "title": "Full Stack Developer (Intern)",
+      "company": "CASA Information Systems Consulting",
+      "location": "Casablanca",
+      "duration": "January 2023 - February 2023",
+      "description": "Developed an innovative car rental platform designed to streamline communication between clients and agency owners. Managed the full lifecycle from UML modeling to database management and frontend styling.",
+      "technologies": ["PHP", "Laravel", "MySQL", "JavaScript", "HTML5", "CSS3", "Bootstrap", "GitHub", "StarUML"]
+    }
+  ]
 function Experience() {
-  const [exper, setExper] = useState([]);
-  useEffect(() => {
-    axios
-      .get("http://localhost:3000/experience")
-      .then((res) => setExper(res.data))
-      .catch((err) => console.error(err));
-  }, []);
+  // const [exper, setExper] = useState([]);
+  // useEffect(() => {
+  //   axios
+  //     .get("http://localhost:3000/experience")
+  //     .then((res) => setExper(res.data))
+  //     .catch((err) => console.error(err));
+  // }, []);
   return (
     <div>
       <h2 className="text-white/80 font-['JetBrains_Mono'] text-sm lg:text-xl">My Experience</h2>
@@ -16,7 +34,7 @@ function Experience() {
         applications using Laravel's robust backend and React's dynamic frontend
       </p>
       <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-2 pt-8 gap-6 w-full lg:w-full max-h-[450px] overflow-y-auto overflow-x-hidden custom-scrollbar pr-4">
-        {exper.map((item, index) => (
+        {experience.map((item, index) => (
           <div
             key={index}
             className="bg-[#232329] p-6 rounded-xl border border-white/5 flex flex-col gap-2"

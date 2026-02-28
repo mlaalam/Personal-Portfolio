@@ -1,17 +1,95 @@
 import axios from "axios";
 import { useEffect, useState, useRef } from "react";
 import { Github, ExternalLink, X, ChevronLeft, ChevronRight } from "lucide-react";
-
+const projects = [
+  {
+    "id": 1,
+    "title": "MyTiq",
+    "category": "Full-Stack App",
+    "description": "A comprehensive appointment and ticketing management platform for events. Features a structured REST API, role-based authentication, and a dynamic administration dashboard for event creators.",
+    "technologies": ["Laravel", "React.js", "MySQL", "Tailwind CSS" ,"Context API" ,"Jira" ,"Uml"],
+    "image": "/public/images/projects/mytiq.png",
+    "features": [
+      "Event creation and management",
+      "Secure ticket reservation system",
+      "Admin dashboard with analytics",
+      "Fully responsive UI"
+    ],
+    "link": "https://github.com/mlaalam/brief_groub_mytiq.git"
+  },
+  {
+    "id": 2,
+    "title": "KhadmaLink",
+    "category": "Full-Stack App",
+    "description": "A professional networking platform connecting artisans with clients. It features job offer management, profile customization, and a secure application tracking system.",
+    "technologies": ["Laravel", "React.js", "MySQL", "Tailwind CSS" ,"Redux Toolkit" ,"Jira", "Uml"],
+    "image": "/public/images/projects/khedma.png",
+    "features": [
+      "Employer/Candidate profile management",
+      "Real-time job offer consultation",
+      "Secure application submission",
+      "Advanced filtering for services"
+    ],
+    "link": "https://github.com/mlaalam/Fil-Rouge.git"
+  },
+  {
+  "id": 3,
+  "title": "Timyo",
+  "category": "Full-Stack App",
+  "description": "A robust appointment booking application with role-based access. Built with Laravel 10 (Sanctum) and React (Vite), featuring comprehensive unit testing, admin dashboards, and automated workflows.",
+  "technologies": [
+    "Laravel 10", 
+    "React.js", 
+    "MySQL", 
+    "Tailwind CSS", 
+    "Sanctum", 
+    "PHPUnit", 
+    "Jest", 
+    "Jira", 
+    "UML"
+  ],
+  "image": "/public/images/projects/timyo.png",
+  "features": [
+    "Role-based authentication (Admin & User)",
+    "Secure appointment booking and management",
+    "Admin control panel for user/appointment approval",
+    "Comprehensive Backend (PHPUnit) & Frontend (Jest) testing",
+    "Detailed UML documentation and Jira project tracking"
+  ],
+  "link": "https://github.com/mlaalam/timyo_appointment_app.git"
+},
+{
+  "id": 4,
+  "title": "PodCastify API",
+  "category": "Backend API",
+  "description": "A sophisticated digital audio API for podcast discovery and management. This platform features a multi-role ecosystem where users can discover content, hosts can manage their own shows and episodes, and admins oversee the entire platform via secured RESTful endpoints.",
+  "technologies": [
+    "Laravel 10",
+    "REST API",
+    "Sanctum",
+    "MySQL",
+    "JWT",
+    "PHPUnit",
+    "Swagger",
+    "Form Requests"
+  ],
+  "image": "/public/images/projects/podcast.png",
+  "features": [
+    "Multi-role RBAC (User, Host, and Administrator permissions)",
+    "Advanced search filtering by title, genre, and host",
+    "Secure media management for podcasts and audio episodes",
+    "Automated testing suite with PHPUnit for API stability",
+    "Comprehensive API documentation using Swagger/OpenAPI standards"
+  ],
+  "link": "https://github.com/mlaalam/podcast-discovery-api.git"
+}
+]
 const CardProject = () => {
-  const [projects, setProject] = useState([]);
+
   const [selectedProject, setSelectedProject] = useState(null);
   const scrollRef = useRef(null);
 
-  useEffect(() => {
-    axios.get('http://localhost:3000/projects')
-      .then((res) => setProject(res.data))
-      .catch((err) => console.error(err));
-  }, []);
+
 
   const scroll = (direction) => {
     const { current } = scrollRef;
